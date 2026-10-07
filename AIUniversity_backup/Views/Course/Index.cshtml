@@ -1,0 +1,46 @@
+@model IEnumerable<AIUniversity.Models.Course>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>AI University Courses</title>
+</head>
+
+<body>
+
+    <h1>AI University</h1>
+
+    <h2>Courses</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Course ID</th>
+            <th>Course Name</th>
+            <th>Description</th>
+            <th>Credit</th>
+        </tr>
+
+        @foreach (var course in Model)
+        {
+            <tr>
+                <td>@course.CourseId</td>
+                <td>@course.CourseName</td>
+                <td>@course.Description</td>
+                <td>@course.Credit</td>
+            </tr>
+        }
+
+    </table>
+
+    <br />
+
+    <a href="/Home/Index">Home</a>
+
+    <br />
+
+    <a href="/Student/Index">Students</a>
+
+</body>
+</html>

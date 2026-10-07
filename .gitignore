@@ -1,0 +1,27 @@
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]ib/
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+*.pdb
+*.dll
+*.exe
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+
+# Logs
+*.log

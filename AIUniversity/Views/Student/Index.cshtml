@@ -1,0 +1,46 @@
+@model AIUniversity.Models.Lecturer
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>AI University</title>
+</head>
+
+<body>
+
+    <h1>AI University</h1>
+
+    <h2>Welcome to AI University</h2>
+
+    <p>
+        AI University provides education in Artificial Intelligence,
+        Machine Learning and Data Science.
+    </p>
+
+    <hr />
+
+    <h2>Featured Lecturer</h2>
+
+    <p>
+        <strong>Name:</strong> @Model.Name
+    </p>
+
+    <p>
+        <strong>Email:</strong> @Model.Email
+    </p>
+
+    <p>
+        <strong>Specialisation:</strong> @Model.Specialisation
+    </p>
+
+    <hr />
+
+    <a href="/Student/Index">View Students</a>
+
+    <br />
+
+    <a href="/Course/Index">View Courses</a>
+
+</body>
+</html>
